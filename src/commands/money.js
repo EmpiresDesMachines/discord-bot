@@ -15,7 +15,7 @@ module.exports = async (msg) => {
     if (!arr.includes(currency)) return msg.channel.send("<:fryhmm:657429118371233835> Не верный формат валюты!");
     const getValue = async (el) => {
       if (el === currency) return "";
-      const response = await fetch(`https://free.currconv.com/api/v7/convert?q=${el}_${currency}&compact=ultra&apiKey=${process.env.CURRCONV_API_KEY}`);
+      const response = await fetch(`https://free.currconv.com/api/v7/convert?q=${currency}_${el}&compact=ultra&apiKey=${process.env.CURRCONV_API_KEY}`);
       const json = await response.json();
       let [value] = Object.values(json);
       value = parseInt(value * 100) / 100;

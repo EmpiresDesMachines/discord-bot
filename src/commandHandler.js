@@ -7,12 +7,12 @@ const setpresence = require("./commands/setPresence");
 const gif = require("./commands/gif");
 const help = require("./commands/help");
 const draw = require("./commands/draw");
-
+const convert = require("./commands/convert");
 const money = require("./commands/money");
 // const info = require("./commands/info");
 
 const commands = {
-  money, курс: money, image, weather, погода: weather, ping, ball, serverinfo, setpresence, gif, help, draw,
+  convert, money, курс: money, image, weather, погода: weather, ping, ball, serverinfo, setpresence, gif, help, draw,
 };
 
 const prefix = "!";
