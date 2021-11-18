@@ -12,7 +12,7 @@ module.exports = async (msg) => {
   
   try {
     const arr = ["USD", "EUR", "RUB", "UAH"];
-
+    if (!arr.includes(currency)) return msg.channel.send("<:fryhmm:657429118371233835> Не верный формат валюты!");
     const getValue = async (el) => {
       if (el === currency) return "";
       const response = await fetch(`https://free.currconv.com/api/v7/convert?q=${el}_${currency}&compact=ultra&apiKey=${process.env.CURRCONV_API_KEY}`);
@@ -41,7 +41,6 @@ ${values.join("")}\`\`\``);
     getMultipleExchangeRate();
 
   } catch (error) {
-    msg.channel.send("<:fryhmm:657429118371233835> Не верный формат валюты!");
-    return error;
+      return msg.channel.send("Ошибка! <:pepe:244531994808156161>");
   }
 };
