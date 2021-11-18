@@ -8,10 +8,11 @@ const gif = require("./commands/gif");
 const help = require("./commands/help");
 const draw = require("./commands/draw");
 
+const money = require("./commands/money");
 // const info = require("./commands/info");
 
 const commands = {
-  image, weather, погода: weather, ping, ball, serverinfo, setpresence, gif, help, draw,
+  money, курс: money, image, weather, погода: weather, ping, ball, serverinfo, setpresence, gif, help, draw,
 };
 
 const prefix = "!";

@@ -5,6 +5,7 @@ module.exports = async (msg) => msg.channel.send(`
   !weather <city> || !погода <город>
   !gif <gif name>
   !ping
+  !money <currency> || !курс <currency>
   !ball
   !draw <text>
   !serverinfo
