@@ -10,3 +10,5 @@
 * prefix + draw <text>
 * prefix + serverinfo
 * prefix + setpresence <activity type, status, activity name>
+* prefix + money <currency> || курс <currency>
+* prefix + convert <val1> <val2>
