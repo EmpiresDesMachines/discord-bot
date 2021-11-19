@@ -18,7 +18,7 @@ module.exports = async (msg) => {
       const response = await fetch(`https://free.currconv.com/api/v7/convert?q=${currency}_${el}&compact=ultra&apiKey=${process.env.CURRCONV_API_KEY}`);
       const json = await response.json();
       let [value] = Object.values(json);
-      value = parseInt(value * 100) / 100;
+      value = value >= 1 ? parseInt(value * 100) / 100 : value.toPrecision(2);
       return `${el}: ${value}\n`;
     };
  
