@@ -5,7 +5,7 @@
 - default prefix = `!`
 - prefix + help
 - prefix + image `image name`
-- prefix + weather `city` || !погода `город`
+- prefix + weather `city` || погода `город`
 - prefix + gif `name`
 - prefix + ping
 - prefix + ball
